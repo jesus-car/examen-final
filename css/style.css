@@ -78,6 +78,17 @@
     display: none;
 }
 
+.contact button{  
+    width: 8.375rem;
+    font-size: 0.82rem;
+    padding: 0.78rem 2.56rem;
+    border: none;
+    color: white;
+    background-color: #8B48BF;
+    border-radius: 3.125rem;
+    cursor: pointer;
+}
+
 
 
 section {
@@ -120,29 +131,32 @@ section {
 }
 
 .contact-buttom-intro{
-    width: 8.375rem;
-    height: 2.75rem;
     background-color: #8B48BF;
     font-weight: 500;
     color: white;
     border-radius: 3.125rem ;
     border: none;
+    padding: 0.78rem 2.56rem;
 }
 
 .second-part{
     background-color: #3CDDF3;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .second-part h2 {
     font-size: 2.25rem;
-
     padding: 2.5rem 1.25rem;
 }
-.second-part p {
+.mobileP {
     font-size: 1rem;
     font-weight: 500;
     padding: 0.625rem 1.25rem 2.5rem 1.25rem;
+}
+.desktopP{
+    display: none;
 }
 
 
@@ -188,43 +202,55 @@ h3 ~ p {
     margin: 2rem 1.75rem 2rem 2.5rem;
 }
 
+
+/*BEST OF MONTH SECTION*/
+
 .players-section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    align-content: center;
 
 }
 .players-section h2{
     color: #242E53;
     font-size: 2.45rem;
     font-weight: 700;
-}
-.best-players {
-    padding-top: 6.8rem ;
+    text-align: center;
 }
 
-.player-2 {
+.best-players {
+    padding-top: 6.8rem ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.best-players>div {
+    width: 27.8125rem;
+}
+
+.player{
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #FAFAFA ;
     position: relative;
-    margin: 1.06rem;
+    margin: 1.06rem 0;
 }
 
-.player-2 img {
+.player-img {
     position: absolute;
     top: -2rem;
     align-self: center;
 }
 
-.player-2 h3 {
+.player h3 {
     padding-top : 4rem;
     color: #3F4868;
     font-size: 1rem;
     font-weight: 700;
 }
-.player-2 p {
+.player p {
     color: #B9B9C1;
     font-size: 1rem;
     margin: 0;
@@ -239,6 +265,8 @@ h3 ~ p {
 }
 
 .buttom-more {
+    display: flex;
+    justify-content: center;
     padding: 1.6rem;
 }
 
@@ -251,6 +279,8 @@ h3 ~ p {
     border-radius:3.125rem;
     color: white;
 }
+
+/*ULTIMA PARTE MAIN*/
 
 .four-part {
     display: flex;
@@ -272,10 +302,13 @@ h3 ~ p {
     color: white;
     border-radius: 3.1rem;
     font-size: 0.82rem;
-    padding: 0.82rem 2.63rem;
+    padding: 0.82rem 2.625rem;
     background-color: #232C50;
 
 }
+
+/*INICIO FOOTER*/
+
 
 footer {
     background-color: #1E1E26;
@@ -286,7 +319,9 @@ footer {
 form {
     margin: 3.25rem;
 }
-
+.mob-hidden {
+    display: none;
+}
 form input {
     font-size: 0.82rem;
     border: none;
@@ -335,4 +370,233 @@ footer p {
     text-align: center;
     color: #8C8C94;
     padding-bottom: 3.125rem;
+}
+
+@media screen and (min-width: 481px) {
+    .navbar {
+        margin: 4rem 11rem;
+        position: static;       
+        
+    }
+    .checkbox {
+        display: none;
+    }
+    .contact {
+        display: block;
+    }
+    .menu-icon, .menu-close {
+        display: none;
+    }
+    .hamburguesa {
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        background-color: white;
+        width: auto;
+    }
+    .menu li {
+        font-size: 0.8125rem;
+        color: #242E52;
+        margin: 0 0.875rem;
+    }
+
+    li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .menu li a:hover {
+        color: rgba(36, 46, 82, 0.6);
+
+    }
+
+    .first-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 9.375rem 10.625rem 6rem 11.25rem;
+
+    }
+    .first-part>div {
+        width: 50%;
+        margin: 0;
+    }
+    
+    .img-front img {
+        width: 100%;
+        height: 100%;
+    }
+    .font-inf h2{
+        margin: 1.94rem 0;
+    }
+    .font-inf {
+        padding-left: 5rem;
+    }
+    .font-inf p {
+        text-align: right;
+        font-weight: 500;
+    }
+
+
+    .second-part {
+        flex-direction: row;
+        justify-content: center;
+        background-color: #8B48BF;
+        padding: 2.5rem 13.75rem ;
+        margin-bottom: 0;
+    }
+    .second-part h2 {
+        padding: 0;
+    }
+
+    .mobileP {
+        display: none;
+    }
+    
+    .second-block{
+        width: 50%;
+        
+    }
+
+    .desktopP {
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        padding-left:3rem ;
+    }
+    .third-part{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 0;
+        padding: 2.5rem 9.6rem;
+        background-color: #FAFAFA;
+    }
+    .track-1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .req {
+        width: 50%;
+    }
+    .req h3 {
+        background-color: #FAFAFA;
+        width: auto;
+        align-self: flex-start;
+    }
+    .info-count {
+        margin-right: 1.44rem;
+    }
+
+    .req p {
+        padding-left: 3.24rem;
+        margin-top: 1.125rem;
+    }
+
+    /*Best of the month part*/
+
+    .players-section {
+        margin-top: 6.06rem;
+        margin-bottom: 9.68rem;
+        padding: 0 2.5rem;
+    }
+
+    .best-players>.player {
+        width: 27rem;
+    }
+    .player h3 {
+        margin-bottom: 1.3rem;
+
+    }
+    .player p {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .player-1, .player-3 {
+        display: flex;
+    }
+    .buttom-more button:hover {
+        background-color: rgba(139, 72, 191, 0.7);
+        cursor: pointer;
+    }
+
+    /*ULTIMA PARTE MAIN*/
+
+    .four-part {
+        background-color: #8B48BF;
+        justify-content: space-around;
+        padding: 4rem 4rem;
+    }
+    .last-part{
+        width: 27rem;
+    }
+
+    .four-part h2{
+        text-align: left;
+        padding: 0;
+    }
+    .go-for-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .go-for-button button{
+        background-color: white;
+        color: #8B48BF;
+    }
+    /* INICIO FOOTER*/
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .mob-hidden{
+        display: block;
+        font-size: 0.78rem;
+        text-align: end;
+    }
+    .desk-hidden{
+        display: none;
+    }
+
+    .icon-logo{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding: 0 2.5rem;
+    }
+    .icons-final{
+        width: 9.56rem;
+        padding: 2.5rem 0;
+        justify-content: space-between;
+    }
+    .logo-final{
+        padding: 2.5rem 0;
+        justify-content: flex-start;
+    }
+
+    .links-final {
+        align-items: center;
+        width: 24.54rem;
+        justify-content: space-between;
+        
+
+    }
+    .form-zone{
+        padding-right: 5rem;
+    }
+
+    div>form {
+        margin: 3.51rem 0;
+    }
+    form input{
+        width: 12.56rem;
+    }
 }
