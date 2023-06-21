@@ -398,7 +398,7 @@ footer p {
 
 /* MEDIA QUERIES*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .navbar {
         margin: 4.44vw 12.22vw;
         position: static;         
