@@ -12,7 +12,7 @@
 
 .navbar {
     display: flex;
-    margin: 2.5rem 3.5rem;
+    margin: 10vw 14vw;
     position: relative;
     justify-content: space-between;
 }
@@ -22,16 +22,16 @@
 }
 
 .hamburguesa {
-    width: 2.56rem;
-    height: 2.87rem;
-    margin-right: 0.5rem;
+    width: 10vw;
+    height: 11.48vw;
+    margin-right: 2vw;
 }
 
 .checkbox, .icons {
     position: absolute;
     cursor: pointer;
-    width: 3rem;
-    height: 3rem;
+    width: 12vw;
+    height: 12vw;
 }
 .icons{
     pointer-events: none;
@@ -66,10 +66,15 @@
     background-color: aquamarine;
     display: none;
 }
+.menu li a:link{
+    color: #242E52;
+}
+.menu li a:visited{
+    color: #242E52;
+}
 
 .menu li {
     font-size: 1.5rem;
-    color: #242E52;
 }
 
 .menu li {
@@ -119,7 +124,7 @@ section {
 }
 
 .font-inf h2{
-    font-size: 3.015rem;
+    font-size: 12.56vw;
     color: #232C50;
     text-align: end;
     margin: 0.875rem 0;  
@@ -147,6 +152,8 @@ section {
     padding: 0.78rem 2.56rem;
 }
 
+/* SECOND PART*/
+
 .second-part{
     background-color: #3CDDF3;
     color: white;
@@ -173,7 +180,7 @@ section {
 .third-part {
     display: flex;
     flex-direction: column; 
-    padding-top: 1rem;
+    padding-top: 4vw;
 }
 .track-1, .track-2 {
     display: flex;
@@ -187,27 +194,27 @@ section {
     background-color: rgba(139, 72, 191, 0.3);
     width: 93%;
     align-self: flex-end;
-    border-radius:1.875rem 0 0 1.875rem;
-    font-size: 1rem;    
+    border-radius:7.5vw 0 0 7.5vw;
+    font-size: 4vw;    
 }
 
 .info-count {
     display: inline-block;
-    width: 4.3rem;
-    font-size: 1rem;
+    width: 17.2vw;
+    font-size: 4vw;
     font-weight: 700;
     background-color:#8B48BF;
     color: white;
     text-align: center;
-    border-radius:1.875rem ;
-    padding: 0.675rem;
-    margin-right: 1rem;
+    border-radius:7.5vw ;
+    padding: 2.7vw;
+    margin-right: 4vw;
 }
 
 h3 ~ p {
     color: #B3B2B7;
-    font-size: 1rem;
-    margin: 2rem 1.75rem 2rem 2.5rem;
+    font-size: 4vw;
+    margin: 8vw 10vw 8vw 10vw;
 }
 
 
@@ -398,6 +405,52 @@ footer p {
 
 /* MEDIA QUERIES*/
 
+@media screen and (min-width: 399px){
+    .font-inf h2{
+        font-size: 3.015rem;
+    }
+    /*BARRA DE NAVEGACION*/
+    .navbar {
+        margin: 2.5rem 3.5rem;
+    }
+    
+    .hamburguesa {
+        width: 2.56rem;
+        height: 2.87rem;
+        margin-right: 0.5rem;
+    }
+    
+    .checkbox, .icons {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /*TERCERA PARTE */
+
+    .third-part {
+    padding-top: 1rem;
+    }
+    .req h3 {
+        border-radius:1.875rem 0 0 1.875rem;
+        font-size: 1rem;    
+    }
+
+    .info-count {
+        width: 4.3rem;
+        font-size: 1rem;
+        border-radius:1.875rem ;
+        padding: 0.675rem;
+        margin-right: 1rem;
+    }
+
+    h3 ~ p {
+        font-size: 1rem;
+        margin: 2rem 1.75rem 2rem 2.5rem;
+    }
+
+}
+
+
 @media screen and (min-width: 769px) {
     .navbar {
         margin: 4.44vw 12.22vw;
@@ -446,14 +499,16 @@ footer p {
     .first-part {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
-        margin: 9.375rem 10.625rem 6rem 11.25rem;
+        margin: 9.375rem 2rem 6rem 2rem;
 
     }
     .first-part>div {
-        width: 50%;
+        width: 35.3125rem;
         margin: 0;
     }
+
     
     .img-front img {
         width: 100%;
@@ -477,16 +532,20 @@ footer p {
     }
 
     /*SECOND SECTION*/
+    
 
     .second-part {
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
         background-color: #8B48BF;
-        padding: 2.5rem 13.75rem ;
-        margin-bottom: 0;
+        padding: 0 2.3rem;
+        margin: 2.5rem 0 0 0;
+
     }
     .second-part h2 {
-        padding: 0;
+        padding: 2.5rem 2.8rem;
+        padding-bottom: 0;
     }
 
     .mobileP {
@@ -494,15 +553,14 @@ footer p {
     }
     
     .second-block{
-        width: 50%;
-        
+        width: 34.375rem;
+        padding: 2.5rem 3.125rem;
     }
 
     .desktopP {
         display: block;
         font-size: 1rem;
         font-weight: 500;
-        padding-left:3rem ;
     }
 
     /* TERCERA PARTE*/
@@ -585,10 +643,12 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 2rem ;
     }
     .go-for-button button{
         background-color: white;
         color: #8B48BF;
+
     }
     .go-for-button button {
         cursor: pointer;
@@ -628,7 +688,7 @@ footer p {
     .links-final {
         align-items: center;
         width: 24.54rem;
-        justify-content: space-between;
+        justify-content: space-around;
         
 
     }
