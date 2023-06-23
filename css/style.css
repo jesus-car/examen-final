@@ -19,6 +19,7 @@
 .logo {
     display: flex;
     align-items: center;
+    margin: 0 2rem;
 }
 
 .hamburguesa {
@@ -83,6 +84,7 @@
 
 .contact {
     display: none;
+    margin: 0 2rem;
 }
 
 .contact button{  
@@ -476,13 +478,15 @@ footer p {
     .menu {
         display: flex;
         position: static;
+        justify-content: center;
+        flex-wrap: wrap;
         background-color: white;
         width: auto;
     }
     .menu li {
         font-size: 0.8125rem;
         color: #242E52;
-        margin: 0 0.875rem;
+        margin: 0.5rem 0.875rem;
     }
 
     li a {
@@ -643,7 +647,7 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem ;
+        padding: 2rem 0;
     }
     .go-for-button button{
         background-color: white;
